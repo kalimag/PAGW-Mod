@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 484613938
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 85406a998ca88ca87cf7d18deb238b2c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8ce7ff9c0c6ba8d2a623d30ec748ce2c
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Materials/Grid.mat
+- Assets/Shaders/Grid.shader
+- Assets/Materials/Opaque.mat
+- Assets/Materials/Transparent 2.mat
+- Assets/Shaders/Overlay.shader
+- Assets/Materials/Overlay.mat
+- Assets/Shaders/Opaque.shader
+- Assets/Materials/Transparent 1.mat
+- Assets/Shaders/Transparent.shader
+- Assets/Materials/Transparent.mat
+Dependencies: []
