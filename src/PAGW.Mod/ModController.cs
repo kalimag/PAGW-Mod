@@ -12,7 +12,6 @@ namespace PAGW.Mod
 		private static bool _unityExplorerInitialized;
 
 		private static int _cursorUsers;
-		private static bool _forceCursorDisabled;
 
 
 
@@ -88,22 +87,10 @@ namespace PAGW.Mod
 			UpdateCursor();
 		}
 
-		public static void ForceCursorDisabled(bool forceDisabled)
-		{
-			if (forceDisabled != _forceCursorDisabled)
-			{
-				_forceCursorDisabled = forceDisabled;
-				UpdateCursor();
-			}
-		}
-
 		private static void UpdateCursor()
 		{
 			if (Config.LockMouse)
-			{
-				Cursor.visible = !_forceCursorDisabled && _cursorUsers > 0;
-				Cursor.lockState = CursorLockMode.Confined;
-			}
+				Cursor.lockState = _cursorUsers > 0 ? CursorLockMode.Confined : CursorLockMode.Locked;
 		}
 
 
